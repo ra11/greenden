@@ -13,7 +13,7 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
             class="size-5 w-6 h-6 md:hidden">
             <path fill-rule="evenodd"
                 d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
@@ -33,6 +33,24 @@
             </li>
         </ul>
     </nav>
+    <!--Side Navbar-->
+    <section id="sideNav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width:50%;height:100vh;right:-50%">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+        </div>
+        
+        <ul class="flex flex-col gap-10 text-gray-600 items-center ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us
@@ -73,6 +91,7 @@
         <p>The standard chucnk of lorem used since 1990s is reproduced below for those interest</p>
         <p>@2024 Greendey.com</p>
     </section>
+    <script src="contact.js"></script>
 </body>
 
 </html>
